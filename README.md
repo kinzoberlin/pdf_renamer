@@ -42,7 +42,8 @@ When the script is finished it will say ```Processing complete!```
 For better performance, this script does not ask the LLM to OCR the pdfs, it just copies and pastes the first two pages of text along with the prompt. 
 
 **Changed titles are bad**
-It uses this prompt by default, but you want to change it depending on your use case. You can do that by editing line 33 in pdf_renamer.py
+
+It uses this prompt by default, but you need to tweak it depending on your use case. You can do that by editing line 33 in pdf_renamer.py
 
  prompt = f"""Analyze this academic paper text from the first two pages and return ONLY the actual title. 
     Return NOTHING else except the title in title case. 
