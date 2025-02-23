@@ -9,14 +9,13 @@ Works well with llama3.2 3b which is small enough to run on most computers witho
 - [Ollama](https://ollama.ai/) installed and running
 - Python 3.6+
 - Required packages: `PyPDF2`, `requests`
-
+- 
 ## Installation
 1. Clone/download this repository
 2. Install dependencies:
-```pip install -r requirements.txt```
-
-4. Install Ollama and your preferred model:
-``` ollama pull llama3.2:latest ``` or your preferred model
+```pip install PyPDF2 requests```
+3. Install Ollama and your preferred model:
+``` ollama pull llama3.2:latest ``` 
 
 ## Usage
 
@@ -74,6 +73,6 @@ To fix this check to see if ollama is already running with
 
 Check that you have llama3.2 installed (or whatever model is definied on line 9 of the script with ```ollama list```
 
-If that doesn't work, you can try 'systemctl stop ollama` (on linux) and then run `ollama serve` again. Restarting your computer will accomplish the same. 
+If that doesn't work, you can try ```systemctl stop ollama``` (on linux) and then run `ollama serve` again. Restarting your computer will accomplish the same. 
 
 
