@@ -47,7 +47,6 @@ It uses this prompt by default, but you need to tweak it depending on your use c
 
  prompt = f"""Analyze this academic paper text from the first two pages and return ONLY the actual title. 
     Return NOTHING else except the title in title case. 
-
     Text sample: {text[:3000]}"""
     
 **WARNING**: If you think you might want to keep the original titles of the files, make a backup of them first. 
