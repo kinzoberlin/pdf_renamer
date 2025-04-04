@@ -106,6 +106,14 @@ def process_pdfs(directory, include_subdirs):
         clean_title = clean_filename(title)
         new_filename = f"{clean_title}.pdf"
         new_path = os.path.join(file_dir, new_filename)
+
+        # Check if the file already exists and append a number if it does
+        base_name, ext = os.path.splitext(new_filename)
+        counter = 1
+        while os.path.exists(new_path):
+            new_filename = f"{base_name}_{counter}{ext}"
+            new_path = os.path.join(file_dir, new_filename)
+            counter += 1
         
         try:
             os.rename(pdf_path, new_path)
